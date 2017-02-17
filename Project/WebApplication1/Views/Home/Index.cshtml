@@ -2,20 +2,24 @@
     ViewBag.Title = "Trang Chủ";
 }
 
-<ul>
-    <li>
-        <a href="#"><img src="~/Content/HinhAnh/img01.jpg" width="300" height="300" alt="" /></a>
-        <span>Cho Xin Một Vé Về Tuổi Một Vé Về Tuổi Tuổi Một Vé Về Tuổi Tuổi Một Vé Về Tuổi Tuổi Một Vé Về Tuổi<br>
-        <a href="#" class="buy">Mua Ngay</a>
-     </span>
-    </li>
-    <li><a href="#"><img src="~/Content/HinhAnh/img02.jpg" width="300" height="300" alt="" /></a><span>Trại Hoa Vàng<a href="#" class="buy">Mua Ngay</a></span></li>
-    <li><a href="#"><img src="~/Content/HinhAnh/img03.jpg" width="300" height="300" alt="" /></a><span>Kính Vạn Hoa<a href="#" class="buy">Mua Ngay</a></span></li>
-    <li><a href="#"><img src="~/Content/HinhAnh/img04.jpg" width="300" height="300" alt="" /></a><span>Chuyện Xứ Lang Biang<a href="#" class="buy">Mua Ngay</a></span></li>
-    <li><a href="#"><img src="~/Content/HinhAnh/img08.jpg" width="300" height="300" alt="" /></a><span>Còn Chút Gì Để Nhớ<a href="#" class="buy">Mua Ngay</a></span></li>
-    <li><a href="#"><img src="~/Content/HinhAnh/img07.jpg" width="300" height="300" alt="" /></a><span>Tôi Thấy Hoa Vàng Trên Cỏ Xanh<a href="#" class="buy">Mua Ngay</a></span></li>
-    <li><a href="#"><img src="~/Content/HinhAnh/img05.jpg" width="300" height="300" alt="" /></a><span>Ngồi Khóc Trên Cây<a href="#" class="buy">Mua Ngay</a></span></li>
-    <li><a href="#"><img src="~/Content/HinhAnh/img09.jpg" width="300" height="300" alt="" /></a><span>Hạ Đỏ<a href="#" class="buy">Mua Ngay</a></span></li>
-    <li><a href="#"><img src="~/Content/HinhAnh/img06.jpg" width="300" height="300" alt="" /></a><span>Tấm Cám<a href="#" class="buy">Mua Ngay</a></span></li>
-</ul>
+@{
+    for (int i = 0; i < 10; i++)
+    {
+        
+        <div class="products">
+            <img class="pd-img"  src="~/Content/HinhAnh/img03.jpg"  width="233" height="245"/>
+        <div class="pd-des"><br>
+            <ul style="text-align:left;margin-left:20px;">
+                <li>Tên</li>
+                <li>Giá</li>
+                <li>Tác Giả</li>
+                <li>Nhà Sản Xuất</li>
+                <li>Mua Ngay</li>
+            </ul>
+            </div>
+           
+    </div>
+}
+}
+
 <br class="clear" />

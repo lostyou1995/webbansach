@@ -279,7 +279,7 @@
 * PRODUCTS
 ******************************************************************************************/
 
-	#products {
+	/*#products {
 		width: 980px;
 		background: #fff;
 		margin: 0;
@@ -323,7 +323,55 @@
 		border-radius: 10px;
 		text-shadow: 1px 1px 1px #000;	
 		font-size: 11px;
-	}
+	}*/
+    /*--------------------*/
+    .products
+  {
+   position: relative;
+   float: left;
+   height: 245px;
+   width: 233px;
+   border: 1px solid gray;
+   font-family: tahoma;
+   font-size: 12px;
+   margin-left: 10px;
+   cursor: pointer;
+   margin-bottom:10px;
+  }
+ 
+ .pd-img
+ {
+  position: absolute;
+  /*top: 5%;
+  left: 5%;*/
+  height: 100%;
+  width: 100%;
+ }
+ .pd-img:hover
+ {
+  opacity: 0.5;
+ }
+ 
+ .pd-des
+ {
+  position: absolute;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+  transition: height 1s;
+  text-align: center;
+  opacity:0.5;
+  color:black;
+  font-weight:bold;
+ }
+ 
+ .products:hover .pd-des
+ {
+  height: 100%;
+  transition: height 1s;
+ }
 /******************************************************************************************
 * FOOTER
 ******************************************************************************************/
